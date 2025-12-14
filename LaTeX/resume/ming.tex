@@ -9,63 +9,108 @@
 \usepackage{progressbar}
 \usepackage{hyperref}
 
-
 \begin{document}
 
 \begin{center} 
 \Large\textbf{明廷来个人简历}
 \end{center}
-\pagenumbering{gobble} % suppress displaying page number
+\pagenumbering{gobble} % 隐藏页码
 
 {
-% change Large font here
+% 个人信息栏
 \Large{
   \begin{tabu}{ c l }
-   \multirow{5}{1in}{\includegraphics[width=0.88in]{mingtinglai}} & \scshape{MingTinglai} \\ 
-    &\email{tlming16@fudan.edu.cn} \\ 
-    &\phone{(+86) 18707147981} \\
-    &\github[github.com/tlming16]{https://github.com/tlming16} 
+   \multirow{5}{1in}{\includegraphics[width=0.88in]{mingtinglai}} 
+   & \scshape{\textbf{明廷来（Ming Tinglai）}} \\ 
+    & \email{tlming16@fudan.edu.cn} \\ 
+    & \phone{(+86) 18707147981} \\
+    & \github[github.com/tlming16]{https://github.com/tlming16} 
   \end{tabu}
 }
 }
 
-\section{\textcolor{blue}\faGraduationCap\ 教育经历}
+\section{\textcolor{blue}{\faGraduationCap\ 教育背景}}
 \datedsubsection{\textbf{复旦大学}}{2016.9 -- 2019.6}
-\textit{应用数学,理学硕士}
-\datedsubsection{\textbf{华中师范大学}}{2012.9 -- 2016.6}
-\textit{辅修数学,历史学基地班,学士} 
-
-\section{\textcolor{blue}\faUsers\ 工作经历}
-\datedsubsection{\textbf{旷视科技} ,北京}{2019.7-- 2020.4}
-\role{研究员}{video 组}
-主要工作：
+\textit{应用数学，理学硕士} \quad 
 \begin{itemize}
-  \item 在视频结构化pipeline中,实现推图逻辑。
-  \item 视频结构化模型日常\textcolor{blue}{发版},使用\textcolor{blue}{git}进行版本管理。
-  %\item 基于\textcolor{blue}{docker},搭建了视频结构化统一运行环境。
-  \item 利用megbrain框架,训练深度学习模型(分类)。%训练渣土车\textcolor{blue}{分类模型}和机动车质量模型。
-  %\item 提标训练\textcolor{blue}{数据}和整理数据。
-  \item 每周阅读前沿\textcolor{blue}{论文}。
+  \item 研究方向：最优化理论、数值分析
+  \item 主修课程：凸优化、矩阵计算、机器学习数学基础
 \end{itemize}
 
- \section{\textcolor{blue}\faCogs\ 技能}
- \begin{itemize}[parsep=0.5ex]
-   \item 熟练掌握 \textcolor{blue}{C/C++/Go/Matlab/Java/}等编程语言，熟悉\textcolor{blue}{STL},\textcolor{blue}{boost}。
-   \item 熟练使用版本控制工具\textcolor{blue} {git},熟悉 \textcolor{blue}{gcc}工具链。
-	\item 熟练使用\textcolor{blue} {$\LaTeX$}，熟练掌握\textcolor{blue}{数据结构}基本知识。  
-  \item 熟悉 \textcolor{blue}{openmp},\textcolor{blue}{tbb},\textcolor{blue}{cuda}。
-   \item 熟悉\textcolor{blue}{linux}系统基本操作，熟悉\textcolor{blue}{C++多线程}编程。
-   \item 熟练掌握\textcolor{blue}{计算机视觉}基本方法，机器学习,\textcolor{blue}{深度学习}相关知识。
-   \item 熟练掌握\textcolor{blue}{数学优化}基本理论，熟悉\textcolor{blue}{自动求导}理论。
-   \item 英语四级 591，六级 516, 考研英语 80(研究生英语免修)。
+\datedsubsection{\textbf{华中师范大学}}{2012.9 -- 2016.6}
+\textit{历史学基地班（学士）}，辅修数学
+\begin{itemize}
+  \item 主修历史学，系统训练逻辑思维与文献分析能力
+  \item 辅修数学专业课程，奠定扎实数理基础
 \end{itemize}
 
-\section{\textcolor{red}\faHeartO\ 个人兴趣}
-\begin{itemize}[parsep=0.5ex]
-\item 业余喜欢研究编程语言,如 \textcolor{blue}{\href{https://studygolang.com/}{Golang}},\textcolor{blue}{\href{https://julialang.org/}{Julialang}} ,\textcolor{blue}{\href{https://dlang.org/}{Dlang}}
-\item 喜欢看C++源码。如 \textcolor{blue}{opencv,tensorflow,turicreate,mxnet,boost,llvm,ortools,gecode} 等。
-\item 喜欢数学的优化理论。   
+\section{\textcolor{blue}{\faBriefcase\ 工作经历}}
+\datedsubsection{\textbf{墨芯人工智能 · 大模型编译器工程师}}{上海 \quad 2024.12 -- 至今}
+\begin{itemize}
+  \item 负责墨芯AI芯片的编译器前端开发与性能优化
+  \item 主导大模型算子库建设与硬件适配，支撑LLM训练推理加速
 \end{itemize}
-%\section{\textcolor{blue}{\faAsterisk} 关于我}
-%喜欢数学，喜欢计算机，酷爱C++。Talk is cheap ，Show me the code.
+
+\datedsubsection{\textbf{安居客 · 高级算法工程师}}{上海 \quad 2020.11 -- 2024.12}
+\begin{itemize}
+  \item 负责房产多媒体内容（视频/图片）的算法研发与系统建设
+  \item 主导图像审核、检索、结构化分析等核心算法落地
+\end{itemize}
+
+\datedsubsection{\textbf{旷视科技 · 研究员}}{北京 \quad 2019.7 -- 2020.10}
+\begin{itemize}
+  \item 参与视频结构化算法研发，实现人物、车辆、行为的智能解析
+  \item 优化多目标跟踪与行为识别模型，提升场景理解准确率
+\end{itemize}
+
+\section{\textcolor{blue}{\faFolderOpen\ 项目经历}}
+\begin{enumerate}
+  \item \textbf{墨芯AI芯片算子库开发（2024.12-至今）}
+        \begin{itemize}
+          \item 基于Triton框架从零构建墨芯二代芯片前端算子库，涵盖MatMul、FlashAttention（MHA/MQA/GQA）、PagedAttention、MLA等核心算子
+          \item 设计片上内存动态调度策略，优化数据复用与带宽利用率，支撑百亿参数模型高效推理
+          \item 实现YOLOv8系列（检测/分割/姿态）与ResNet ReID模型在墨芯一代芯片的ONNX编译部署，端侧推理速度提升40\%
+        \end{itemize}
+        
+  \item \textbf{房产图像智能审核系统（2020.11-2024.12）}
+        \begin{itemize}
+          \item 构建房源图片合规审核系统，基于图像分类算法自动识别违规内容，审核效率提升90\%+
+          \item 研发经纪人头像认证系统，融合人脸关键点与欧拉角验证，认证准确率达99.2\%
+          \item 开发户型图智能检测与聚类系统，采用YOLO+OCR技术实现户型元素识别（准确率96.5\%）与相似度匹配
+          \item 搭建跨平台图片一致性校验系统，基于局部特征比对识别篡改与重复图片
+          \item 部署视觉-语言多模态大模型（GLM4V-9B、InternVL2-8B），完成房产场景LoRA微调，支持图文问答与内容生成
+        \end{itemize}
+        
+  \item \textbf{技术架构升级与性能优化（2022-2024）}
+        \begin{itemize}
+          \item 主导服务端从Python2至Python3的全栈迁移，通过Pybind11实现核心模块C++加速，系统性能提升40\%
+          \item 为Java服务端封装OpenCV编译库，提供跨语言调用支持
+          \item 搭建Faiss向量检索引擎，实现千万级全景图片毫秒级相似检索
+        \end{itemize}
+\end{enumerate}
+
+\section{\textcolor{blue}{\faTrophy\ 竞赛获奖}}
+\begin{itemize}
+  \item \textbf{2021年}：58到家派单算法大赛 \quad \textit{一等奖（第1名）}
+  \item \textbf{2023年}：信息茧房算法挑战赛 \quad \textit{三等奖（第4名）}
+  \item \textbf{2022年}：图像拼接算法大赛 \quad \textit{三等奖（第5名）}
+  \item \textbf{2020年}：域外探索算法竞赛 \quad \textit{第十名}
+\end{itemize}
+
+\section{\textcolor{blue}{\faCogs\ 专业技能}}
+\begin{itemize}
+  \item \textbf{编程语言}：精通 Python/C++，熟练使用 Java/Go/Julia/D/Rust，熟悉 STL、LLVM、MLIR
+  \item \textbf{系统开发}：熟悉 Linux 环境、GCC工具链、Git 版本控制，掌握多线程编程（OpenMP/TBB/CUDA）
+  \item \textbf{算法基础}：扎实的数据结构与算法基础，熟悉计算机视觉、深度学习、数学优化理论
+  \item \textbf{工具框架}：熟练使用 PyTorch/TensorFlow、ONNX Runtime、Triton、LaTeX
+  \item \textbf{英语能力}：CET-6（516分），具备英文技术文献阅读能力（研究生英语免修）
+\end{itemize}
+
+\section{\textcolor{red}{\faHeartO\ 个人兴趣}}
+\begin{itemize}
+  \item \textbf{编程语言研究}：深入探索 Go、Julia、D、Rust 等现代语言的特性与设计哲学
+  \item \textbf{开源项目学习}：研读 OpenCV、TensorFlow、LLVM、Boost 等大型 C++ 项目源码
+  \item \textbf{优化理论应用}：关注凸优化、自动微分在最优化与机器学习中的前沿应用
+\end{itemize}
+
 \end{document}
